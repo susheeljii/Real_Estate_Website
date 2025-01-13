@@ -1,9 +1,9 @@
     /*=============== CHANGE BACKGROUND HEADER ===============*/
     function scrollHeader() {
         const header = document.getElementById('header')
-        if (ithis.scrollY >= 50) header.classList.add('scroll-header');
+        if (this.scrollY >= 50) header.classList.add('scroll-header');
     }
-    window.addEventListner('scroll', scrollHeader)
+    window.addEventListener('scroll', scrollHeader)
 
     /*=============== SWIPER POPULAR ===============*/
     var swiperPopular = new Swiper(".popular__container", {
@@ -74,7 +74,7 @@
 
     /*=============== SHOW SCROLL UP ===============*/
     function scrollUp(){
-        const scrollUp = document.getElementsById('scroll-up');
+        const scrollUp = document.getElementById('scroll-up');
         if(this.scrollY >= 350) scrollUp.classList.add('show-scroll');
         else scrollUp.classList.remove('show-scroll')
     }
@@ -105,7 +105,7 @@
     })
 
     /*=============== SCROLL REVEAL ANIMATION ===============*/
-    const sr = ScrollReaveal({
+    const sr = ScrollReveal({
         origin: 'top',
         distance: '60px',
         duration: 2500,
